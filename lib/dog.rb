@@ -9,11 +9,11 @@ class Dog
   end
   
   def self.all
-    puts @@all.to_s
+    puts @@all.collect {|pet| pet.name}
   end
   
   def self.clear_all
-    @@all.clear 
+    @@all.clear
   end
   
 end
